@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<img id="ad-sign" src="https://твой-ник.github.io/ar-rasvetay/rasvetay-logo.jpg" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Titan - Расцветай</title>
+  <!-- WebXR движок (без 8th Wall, чистый WebXR) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@2.0.3/build/webxr-polyfill.min.js"></script>
+  <!-- Наш кастомный скрипт -->
+  <script src="app.js"></script>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: Arial; }
+  </style>
+</head>
+<body>
+  <div id="loading">Сканируй логотип "Расцветай"...</div>
+  <div id="ar-container"></div>
+</body>
+</html>
